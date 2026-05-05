@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeina Khadem</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+  <!-- p5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Zeina Khadem</div>
+
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="CV/ZeinaKhademCV.pdf" class="cv-button"  download>Download CV</a>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="section home">
+    <div class="container">
+
+      <div class="left">
+        <div class="image-container">
+          <div id="p5-sketch"></div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h1 class="name">
+          Zeina <span>Khadem</span>
+        </h1>
+
+        <p class="subtitle">New York University Student, Class of 2027</p>
+
+        <p id="typing-text"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    </h2>About Me</h2>
+
+    <div class="about-layout">
+      <!-- LEFT -->
+      <div class="about-left">
+        <div class="terminal-card">
+          <div class="terminal-grid">
+            <p><span class="label">user:</span> zeina_khadem</p>
+            <p><span class="label">role:</span> interactive_media_student</p>
+            <p><span class="label">university:</span> nyuad</p>
+            <p><span class="label">class of:</span> 2027</p>
+            <p><span class="label">focus:</span> code × design</p>
+            <p><span class="label">based_in:</span> abu_dhabi</p>
+          </div>
+        
+          <br>
+        
+          <p class="about-text">
+            I’m from Lebanon, and I’ve always been drawn to things you can get lost in, like books, music, and stories that stay with you after. I read a lot, I’m usually listening to something, and Spider-Man has been a favorite for as long as I can remember.
+          </p>
+        
+        </div>
+
+        <p class="drag-instruction">
+          drag the stickers onto the board :)
+        </p>
+        <p class="scroll-hint">scroll to see more ↓</p>
+    
+        <!-- STICKERS -->
+        <div class="stickers">
+          <img src="images/books.png" class="sticker" draggable="true">
+          <img src="images/butterfly.png" class="sticker" draggable="true">
+          <img src="images/swirl.png" class="sticker" draggable="true">
+          <img src="images/vinyl.png" class="sticker" draggable="true">
+          <img src="images/car.png" class="sticker" draggable="true">
+          <img src="images/star.png" class="sticker" draggable="true">
+          <img src="images/sunpatch.png" class="sticker" draggable="true">
+          <img src="images/a.png" class="sticker" draggable="true">
+          <img src="images/b.png" class="sticker" draggable="true">
+          <img src="images/c.png" class="sticker" draggable="true">
+          <img src="images/d.png" class="sticker" draggable="true">
+          <img src="images/e.png" class="sticker" draggable="true">
+          <img src="images/f.png" class="sticker" draggable="true">
+          <img src="images/g.png" class="sticker" draggable="true">
+          <img src="images/h.png" class="sticker" draggable="true">
+          <img src="images/i.png" class="sticker" draggable="true">
+          <img src="images/j.png" class="sticker" draggable="true">
+          <img src="images/k.png" class="sticker" draggable="true">
+          <img src="images/l.png" class="sticker" draggable="true">
+          <img src="images/m.png" class="sticker" draggable="true">
+          <img src="images/n.png" class="sticker" draggable="true">
+          <img src="images/o.png" class="sticker" draggable="true">
+          <img src="images/p.png" class="sticker" draggable="true">
+          <img src="images/q.png" class="sticker" draggable="true">
+          <img src="images/r.png" class="sticker" draggable="true">
+          <img src="images/s.png" class="sticker" draggable="true">
+          <img src="images/t.png" class="sticker" draggable="true">
+          <img src="images/u.png" class="sticker" draggable="true">
+          <img src="images/v.png" class="sticker" draggable="true">
+          <img src="images/w.png" class="sticker" draggable="true">
+          <img src="images/x.png" class="sticker" draggable="true">
+          <img src="images/y.png" class="sticker" draggable="true">
+          <img src="images/z.png" class="sticker" draggable="true">
+        </div>
+      </div>
+    
+      <!-- RIGHT -->
+      <div class="about-right">
+        <div class="corkboard" id="corkboard">
+        </div>
+        <button id="clearBoard" class="clear-btn">reset board</button>
+      </div>
+    
+    </div>
+
+
+  </section>
+
+  <!-- WORKS -->
+  <section id="works" class="section">
+  <h2>Works</h2>
+
+  <div class="works-grid">
+
+    <!-- CARD 1 -->
+    <div class="flip-card">
+      <div class="flip-inner">
+        
+        <div class="flip-front">
+          30MFF
+        </div>
+
+        <div class="flip-back">
+          <p>An interactive website that captures the everyday habit of standing in front of the fridge, using user interactions to turn indecision into a relatable digital experience.</p>
+          <a href="https://kzeina.github.io/30MFF/" target="_blank">View Project</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="flip-card">
+      <div class="flip-inner">
+
+        <div class="flip-front">
+          Interactive Comic
+        </div>
+
+        <div class="flip-back">
+          <p>An interactive noir-style digital comic about rival campus cats, featuring animated page flips, and branching storylines that let users choose the outcome.</p>
+          <a href="https://rabeyamily.github.io/MAFIA-CampusCats/" target="_blank">View Project</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="flip-card">
+      <div class="flip-inner">
+
+        <div class="flip-front">
+          Sound Project
+        </div>
+
+        <div class="flip-back">
+          <p>An interactive web experience that explores NYU Abu Dhabi students scattered across the world through immersive soundscapes.</p>
+          <a href="https://kzeina.github.io/sounds_commslab/index.html" target="_blank">View Project</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="flip-card">
+      <div class="flip-inner">
+
+        <div class="flip-front">
+          Video Project
+        </div>
+
+        <div class="flip-back">
+          <p>An interactive multimedia storytelling website that explores parallel daily lives through video-based narratives, and user-driven choices.</p>
+          <a href="https://kzeina.github.io/A-Day-In-2-Lives/ " target="_blank">View Project</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <div class="contact-content">
+
+      <div class="terminal-contact">
+        <p class="terminal-line">&gt; contact_zeina</p>
+        <p class="terminal-line status">&gt; status: waiting...</p>
+    
+        <div class="terminal-input-line">
+          <span>&gt; message:</span>
+          <input type="text" id="messageInput" placeholder="type your message..." />
+        </div>
+    
+        <button id="sendBtn" class="terminal-btn">send</button>
+    
+        <div id="chatBox" class="chat-box"></div>
+    
+        <p class="terminal-email">
+          or email directly: <span id="emailCopy">znk217@nyu.edu</span>
+        </p>
+      </div>
+
+      <div class="contact-right">
+
+        <h3 class="contact-title">other ways to reach me</h3>
+         
+        <div class="contact-item">
+          <span>💼 linkedin</span>
+          <a href="https://www.linkedin.com/in/zeina-khadem-0aa1462aa/" target="_blank">connect</a>
+        </div>
+    
+        <div class="contact-item">
+          <span>📁 github</span>
+          <a href="https://github.com/kzeina" target="_blank">projects</a>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
